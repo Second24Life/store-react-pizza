@@ -47,7 +47,11 @@ function Home() {
           onClickCategory={onSelectCategory}
           items={categoryName}
         />
-        <SortPopup activeSortType={sortBy} items={sortItems} onClickSortType={onSelectSortType} />
+        <SortPopup
+          activeSortType={sortBy.type}
+          items={sortItems}
+          onClickSortType={onSelectSortType}
+        />
       </div>
       <h2 className='content__title'>Все пиццы</h2>
       <div className='content__items'>
